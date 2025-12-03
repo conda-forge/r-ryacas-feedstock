@@ -1,4 +1,4 @@
-{% set version = "1.1.5" %}
+{% set version = "1.1.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Ryacas_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Ryacas/Ryacas_{{ version }}.tar.gz
-  sha256: 3efdf51877ce40875f64e78bab8318e0f4da3020bb1d2be1cc42479148cd83bc
+  sha256: 05e8bc0a28ec744000adcbf641599cf87d1aef7faf8222bb34cbc31c4832daf4
 
 build:
-  number: 4
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
